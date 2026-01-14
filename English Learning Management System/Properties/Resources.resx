@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Whisk_0bf6430918b1f5daae84ab013223a4a5dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_0bf6430918b1f5daae84ab013223a4a5dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_7a2731d0a50dfd5b1424fb307dcf5f16dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_7a2731d0a50dfd5b1424fb307dcf5f16dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_5492df75a0d22f3b4ff404404595b627dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_5492df75a0d22f3b4ff404404595b627dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_311aac7ad8568228d29447fcf1b7dc93dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_311aac7ad8568228d29447fcf1b7dc93dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_7d4409953bc0d76b679441bb050006fadr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_7d4409953bc0d76b679441bb050006fadr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_076b156fd1bef568fd048361114e5be5eg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_076b156fd1bef568fd048361114e5be5eg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_79977cb11a3ae07b0804415d6a87e69ceg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_79977cb11a3ae07b0804415d6a87e69ceg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_3394e9a0b86546a88b841d1cc3de004adr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_3394e9a0b86546a88b841d1cc3de004adr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_6aba0891d35a9dcad954bf110b95ef8ddr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_6aba0891d35a9dcad954bf110b95ef8ddr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_8479a259422cb13aa384fcab30cfc42adr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_8479a259422cb13aa384fcab30cfc42adr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_8d0be457adac59c9b034565f14d4192bdr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_8d0be457adac59c9b034565f14d4192bdr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_f4b8d3091f5472eb67a4df5b97e60128eg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_f4b8d3091f5472eb67a4df5b97e60128eg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_5952a128da5ba2d81e44bf130280d6d9dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_5952a128da5ba2d81e44bf130280d6d9dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_7af3eac3b10eebdbad6485e1d9a71c9bdr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_7af3eac3b10eebdbad6485e1d9a71c9bdr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_5f815065315d09592be4f3ec4ab8d974eg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_5f815065315d09592be4f3ec4ab8d974eg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_84374cf987abd289027437745415fc16dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_84374cf987abd289027437745415fc16dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_48b8f730db7cef7bbed435fed23e115edr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_48b8f730db7cef7bbed435fed23e115edr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_3ecf997d7e6d1a5862a42ef70cb64c95eg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_3ecf997d7e6d1a5862a42ef70cb64c95eg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_464189a0601ec149fd841f6c137a8e2edr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_464189a0601ec149fd841f6c137a8e2edr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_a8ae8f2288e0db49c3b42f3dcb4a165edr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_a8ae8f2288e0db49c3b42f3dcb4a165edr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_b31e7c93bc31ada80ac46f9bf45352dfdr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_b31e7c93bc31ada80ac46f9bf45352dfdr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_3e207dfd0bd7267b30041496d6aa7cf9dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_3e207dfd0bd7267b30041496d6aa7cf9dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_b9b95ee79604c0b91c44d0250172aa6adr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_b9b95ee79604c0b91c44d0250172aa6adr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_79977cb11a3ae07b0804415d6a87e69ceg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_79977cb11a3ae07b0804415d6a87e69ceg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_20e41b3c874b33d9ae94b983270bb25beg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_20e41b3c874b33d9ae94b983270bb25beg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_1669068d1a729e2a0e34795a81fb5a40dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_1669068d1a729e2a0e34795a81fb5a40dr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_b431aa9608a8e569d7d4dd5bb8a1a18bdr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_b431aa9608a8e569d7d4dd5bb8a1a18bdr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_c556d621e533b8c9615450e8526761c8dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_c556d621e533b8c9615450e8526761c8dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_129c13e609585c5a034470c1ca88eddedr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_129c13e609585c5a034470c1ca88eddedr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_d6d536d0adb262c8ed24e4e327f35e7cdr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_d6d536d0adb262c8ed24e4e327f35e7cdr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_6eeff68830bbca59d794a6bf4cc3afd7dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_6eeff68830bbca59d794a6bf4cc3afd7dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_8f39277112fd307b03d4fc2d57204ca5dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_8f39277112fd307b03d4fc2d57204ca5dr.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whisk_15939799505bc0cb8044a9d2c83a4d19dr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whisk_15939799505bc0cb8044a9d2c83a4d19dr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Logo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
