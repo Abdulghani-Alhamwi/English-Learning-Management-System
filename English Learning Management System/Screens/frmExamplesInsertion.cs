@@ -161,11 +161,19 @@ namespace English_Learning_Management_System.Screens
                 MessageBox.Show("Please enter Example/s by the number of your choosed words from 1 to 4 .", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             else
+            if(!GchkSocialMediaView.Checked)
             {
                 Form frmspeakwords = new frmSpeakWordsWithExample(this, MainForm, lstItems, arrExamplesInputs, arrExamplesTranslations);
                 this.Hide();
                 MainForm.Hide();
                 frmspeakwords.Show();
+            }
+            else
+            {
+                Form frmProperView = new frmSpeakWordsProperViewForSocialM(this, MainForm, lstItems, arrExamplesInputs, arrExamplesTranslations);
+                this.Hide();
+                MainForm.Hide();
+                frmProperView.Show();
             }
         }
 

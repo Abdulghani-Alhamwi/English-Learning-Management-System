@@ -42,6 +42,7 @@
             this.GtxtExample4Translation = new Guna.UI2.WinForms.Guna2TextBox();
             this.GtxtExample2Translation = new Guna.UI2.WinForms.Guna2TextBox();
             this.GtxtExample1Transaltion = new Guna.UI2.WinForms.Guna2TextBox();
+            this.GchkSocialMediaView = new Guna.UI2.WinForms.Guna2CheckBox();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -227,7 +228,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.PressedColor = System.Drawing.Color.Coral;
             this.btnExit.Size = new System.Drawing.Size(100, 93);
-            this.btnExit.TabIndex = 9;
+            this.btnExit.TabIndex = 10;
             this.btnExit.Text = "x";
             this.btnExit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnExit.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -406,6 +407,33 @@
             this.GtxtExample1Transaltion.Enter += new System.EventHandler(this.txtBox_Enter);
             this.GtxtExample1Transaltion.Leave += new System.EventHandler(this.txtBox_Leave);
             // 
+            // GchkSocialMediaView
+            // 
+            this.GchkSocialMediaView.AutoSize = true;
+            this.GchkSocialMediaView.BackColor = System.Drawing.Color.Transparent;
+            this.GchkSocialMediaView.Checked = true;
+            this.GchkSocialMediaView.CheckedState.BorderColor = System.Drawing.Color.Purple;
+            this.GchkSocialMediaView.CheckedState.BorderRadius = 50;
+            this.GchkSocialMediaView.CheckedState.BorderThickness = 2;
+            this.GchkSocialMediaView.CheckedState.FillColor = System.Drawing.Color.Purple;
+            this.GchkSocialMediaView.CheckMarkColor = System.Drawing.Color.Lime;
+            this.GchkSocialMediaView.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.GchkSocialMediaView.Font = new System.Drawing.Font("Cairo", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.GchkSocialMediaView.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.GchkSocialMediaView.Location = new System.Drawing.Point(130, 738);
+            this.GchkSocialMediaView.Name = "GchkSocialMediaView";
+            this.GchkSocialMediaView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.GchkSocialMediaView.Size = new System.Drawing.Size(331, 72);
+            this.GchkSocialMediaView.TabIndex = 9;
+            this.GchkSocialMediaView.Text = "Social Media View";
+            this.GchkSocialMediaView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GchkSocialMediaView.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.GchkSocialMediaView.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.GchkSocialMediaView.UncheckedState.BorderRadius = 0;
+            this.GchkSocialMediaView.UncheckedState.BorderThickness = 0;
+            this.GchkSocialMediaView.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.GchkSocialMediaView.UseVisualStyleBackColor = false;
+            // 
             // frmExamplesInsertion
             // 
             this.AcceptButton = this.btnAddExmples;
@@ -415,6 +443,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1597, 851);
+            this.Controls.Add(this.GchkSocialMediaView);
             this.Controls.Add(this.GtxtExample3Translation);
             this.Controls.Add(this.GtxtExample4Translation);
             this.Controls.Add(this.GtxtExample2Translation);
@@ -431,6 +460,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmExamplesInsertion";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -448,5 +478,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnExit;
         private Guna.UI2.WinForms.Guna2GradientButton btnAddExmples;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessfrmAddMoreTranslations;
+        private Guna.UI2.WinForms.Guna2CheckBox GchkSocialMediaView;
     }
 }

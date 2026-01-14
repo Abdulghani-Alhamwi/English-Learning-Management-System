@@ -106,6 +106,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Screens\frmSpeakWordsProperViewForSocialM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmSpeakWordsProperViewForSocialM.Designer.cs">
+      <DependentUpon>frmSpeakWordsProperViewForSocialM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lib\clsLib.cs" />
     <Compile Include="Lib\clsUtilControls.cs" />
     <Compile Include="Lib\clsWord.cs" />
@@ -171,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="Screens\frmMainScreen.resx">
       <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmSpeakWordsProperViewForSocialM.resx">
+      <DependentUpon>frmSpeakWordsProperViewForSocialM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmSpeakWordsWithExample.resx">
       <DependentUpon>frmSpeakWordsWithExample.cs</DependentUpon>
