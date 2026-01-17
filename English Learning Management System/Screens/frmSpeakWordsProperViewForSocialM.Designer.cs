@@ -75,7 +75,7 @@
             this.GbtnTranslation1.Name = "GbtnTranslation1";
             this.GbtnTranslation1.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation1.PressedDepth = 50;
-            this.GbtnTranslation1.Size = new System.Drawing.Size(475, 119);
+            this.GbtnTranslation1.Size = new System.Drawing.Size(475, 130);
             this.GbtnTranslation1.TabIndex = 19;
             this.GbtnTranslation1.Text = "btnTranslation";
             this.GbtnTranslation1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -105,7 +105,7 @@
             this.GbtnTranslation2.Name = "GbtnTranslation2";
             this.GbtnTranslation2.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation2.PressedDepth = 50;
-            this.GbtnTranslation2.Size = new System.Drawing.Size(475, 119);
+            this.GbtnTranslation2.Size = new System.Drawing.Size(475, 130);
             this.GbtnTranslation2.TabIndex = 28;
             this.GbtnTranslation2.Text = "btnTranslation";
             this.GbtnTranslation2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -135,7 +135,7 @@
             this.GbtnTranslation3.Name = "GbtnTranslation3";
             this.GbtnTranslation3.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation3.PressedDepth = 50;
-            this.GbtnTranslation3.Size = new System.Drawing.Size(475, 119);
+            this.GbtnTranslation3.Size = new System.Drawing.Size(475, 130);
             this.GbtnTranslation3.TabIndex = 29;
             this.GbtnTranslation3.Text = "btnTranslation";
             this.GbtnTranslation3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -165,7 +165,7 @@
             this.GbtnTranslation4.Name = "GbtnTranslation4";
             this.GbtnTranslation4.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation4.PressedDepth = 50;
-            this.GbtnTranslation4.Size = new System.Drawing.Size(475, 119);
+            this.GbtnTranslation4.Size = new System.Drawing.Size(475, 130);
             this.GbtnTranslation4.TabIndex = 30;
             this.GbtnTranslation4.Text = "btnTranslation";
             this.GbtnTranslation4.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -176,7 +176,7 @@
             this.lblReady.BackColor = System.Drawing.Color.Transparent;
             this.lblReady.Font = new System.Drawing.Font("Cairo", 68F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblReady.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblReady.Location = new System.Drawing.Point(64, 318);
+            this.lblReady.Location = new System.Drawing.Point(36, 244);
             this.lblReady.Name = "lblReady";
             this.lblReady.Size = new System.Drawing.Size(516, 267);
             this.lblReady.TabIndex = 31;
@@ -188,7 +188,7 @@
             this.guna2ProgressIndicator1.AutoStart = true;
             this.guna2ProgressIndicator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ProgressIndicator1.CircleSize = 0.7F;
-            this.guna2ProgressIndicator1.Location = new System.Drawing.Point(212, 586);
+            this.guna2ProgressIndicator1.Location = new System.Drawing.Point(184, 531);
             this.guna2ProgressIndicator1.Name = "guna2ProgressIndicator1";
             this.guna2ProgressIndicator1.ProgressColor = System.Drawing.Color.Gold;
             this.guna2ProgressIndicator1.Size = new System.Drawing.Size(220, 209);
@@ -199,7 +199,7 @@
             this.lblTE.BackColor = System.Drawing.Color.Transparent;
             this.lblTE.Font = new System.Drawing.Font("Cairo", 52F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblTE.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblTE.Location = new System.Drawing.Point(55, 262);
+            this.lblTE.Location = new System.Drawing.Point(55, 185);
             this.lblTE.Name = "lblTE";
             this.lblTE.Size = new System.Drawing.Size(370, 83);
             this.lblTE.TabIndex = 33;
@@ -211,9 +211,9 @@
             this.lblExample.BackColor = System.Drawing.Color.Transparent;
             this.lblExample.Font = new System.Drawing.Font("Cairo", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblExample.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblExample.Location = new System.Drawing.Point(55, 365);
+            this.lblExample.Location = new System.Drawing.Point(55, 272);
             this.lblExample.Name = "lblExample";
-            this.lblExample.Size = new System.Drawing.Size(501, 190);
+            this.lblExample.Size = new System.Drawing.Size(501, 336);
             this.lblExample.TabIndex = 34;
             this.lblExample.Text = "label1";
             this.lblExample.Visible = false;
@@ -223,10 +223,10 @@
             this.lblTranslation.BackColor = System.Drawing.Color.Transparent;
             this.lblTranslation.Font = new System.Drawing.Font("Cairo", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblTranslation.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblTranslation.Location = new System.Drawing.Point(29, 586);
+            this.lblTranslation.Location = new System.Drawing.Point(29, 607);
             this.lblTranslation.Name = "lblTranslation";
             this.lblTranslation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTranslation.Size = new System.Drawing.Size(501, 190);
+            this.lblTranslation.Size = new System.Drawing.Size(501, 297);
             this.lblTranslation.TabIndex = 35;
             this.lblTranslation.Text = "label1";
             this.lblTranslation.Visible = false;
@@ -239,15 +239,15 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.Controls.Add(this.GbtnEnglishWord);
-            this.guna2GradientPanel1.Controls.Add(this.lblTE);
-            this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation1);
-            this.guna2GradientPanel1.Controls.Add(this.lblReady);
             this.guna2GradientPanel1.Controls.Add(this.guna2ProgressIndicator1);
-            this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation3);
+            this.guna2GradientPanel1.Controls.Add(this.lblReady);
+            this.guna2GradientPanel1.Controls.Add(this.GbtnEnglishWord);
+            this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation1);
             this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation4);
-            this.guna2GradientPanel1.Controls.Add(this.lblTranslation);
             this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation2);
+            this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation3);
+            this.guna2GradientPanel1.Controls.Add(this.lblTE);
+            this.guna2GradientPanel1.Controls.Add(this.lblTranslation);
             this.guna2GradientPanel1.Controls.Add(this.lblExample);
             this.guna2GradientPanel1.Location = new System.Drawing.Point(29, 12);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
@@ -278,7 +278,7 @@
             this.GbtnEnglishWord.Name = "GbtnEnglishWord";
             this.GbtnEnglishWord.PressedColor = System.Drawing.Color.Purple;
             this.GbtnEnglishWord.PressedDepth = 50;
-            this.GbtnEnglishWord.Size = new System.Drawing.Size(475, 116);
+            this.GbtnEnglishWord.Size = new System.Drawing.Size(475, 127);
             this.GbtnEnglishWord.TabIndex = 36;
             this.GbtnEnglishWord.Text = "Speak Selected Words";
             this.GbtnEnglishWord.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;

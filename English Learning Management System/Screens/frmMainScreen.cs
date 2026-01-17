@@ -392,7 +392,7 @@ namespace English_Learning_Management_System
 
         private void GSpeakSelectedWords_Click(object sender, EventArgs e)
         {
-            if(lstvWords.SelectedItems.Count > 0)
+            if(lstvWords.SelectedItems.Count >=1 && lstvWords.SelectedItems.Count <=4)
             {
                 frmExamplesInsertion frmE=new frmExamplesInsertion(this,prepareSelectedItemsToMove(lstvWords.SelectedItems));
                 frmE.ShowDialog();
