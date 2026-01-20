@@ -5,3 +5,7 @@ Decimal
 Containers
 Quantities
 Ambiguous
+Bonus
+Consequence
+Consequences
+Company

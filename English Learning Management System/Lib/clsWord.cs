@@ -65,44 +65,28 @@ namespace Lib
 
         private static bool _SaveMoreTranslations(string T1,string T2,string T3,string T4,string FileName,bool WithSeparator=true)
         {
-            if (T1.Contains(','))
+
+            if (T1 != "" && T1 != "Enter Arabic Translation/s")
             {
                 using (StreamWriter MyFile = new StreamWriter(FileName, true))
                 {
-                    while (T1.Contains(","))
-                    {
-                        int IndexOfComma = T1.IndexOf(",");
-                        string subword = T1.Substring(0, IndexOfComma);
-                        T1 = T1.Remove(0, IndexOfComma + 1);
-                        MyFile.WriteLine("#//#" + "\r\n" + subword);
-                    }
-                    MyFile.WriteLine("#//#" + "\r\n" + T1);
-                    //MyFile.Dispose();//No need to it because using will automatically calls it and even if an exception happens the using will close the file.
-                }
-                MessageBox.Show("You can't add more than one translation for that english word becuase now you added many translations for diferent english words you supposed to be enterd in the txt box for english words and the arabic translations has been added successfully !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return true;
-            }
-
-            else if (T1 != "" && T1!="Enter Arabic Translation/s")
-                using (StreamWriter MyFile = new StreamWriter(FileName, true))
-                {   
-                    if(WithSeparator)
-                    MyFile.Write("\r\n"+"#//#" + "\r\n" + T1);
+                    if (WithSeparator)
+                        MyFile.Write("\r\n" + "#//#" + "\r\n" + T1);
                     else
-                        MyFile.Write(T1 +"\r\n");//For English Word
+                        MyFile.Write(T1 + "\r\n");//For English Word
 
-                    if (T2 != "" && T2 != null && T2!="Enter Arabic Translation 2")
-                        MyFile.Write(","  + T2);
+                    if (T2 != "" && T2 != null && T2 != "Enter Arabic Translation 2")
+                        MyFile.Write("," + T2);
 
                     if (T3 != "" && T3 != null && T3 != "Enter Arabic Translation 3")
                         MyFile.Write("," + T3);
 
                     if (T4 != "" && T4 != null && T4 != "Enter Arabic Translation 4")
-                        MyFile.Write(","  + T4);
+                        MyFile.Write("," + T4);
 
                     return true;
                 }
-
+            }
             return false;
 
         }
