@@ -106,6 +106,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lib\clsSpeakWordsInView.cs" />
     <Compile Include="Screens\frmSpeakWordsProperViewForSocialM.cs">
       <SubType>Form</SubType>
     </Compile>
