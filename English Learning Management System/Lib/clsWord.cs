@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Web;
 using System.Windows.Forms;
 
 namespace Lib
@@ -111,6 +112,8 @@ namespace Lib
             public string Translation4;
         }
 
+        internal static ArabicTranslation ATranslations;
+
         internal static List<ArabicTranslation> LoadArabicTranslationsFromFile(string FileName)
         {
             List<string> lWords = new List<string>();
@@ -177,6 +180,74 @@ namespace Lib
             //lTasks.AddRange(arrTasks);
 
             return lWords;
+        }
+
+        internal static void DeleteAllRecords(string EnglishWordsFileName,string ArabicTranslationsFileName)
+        {
+            if(File.Exists(EnglishWordsFileName))
+            File.Delete(EnglishWordsFileName);
+
+            if(File.Exists(ArabicTranslationsFileName))
+            File.Delete(ArabicTranslationsFileName);
+        }
+
+        internal static void DeleteWord(string SelectedWord,string EnglishFileName,string ArabicTranslationsFileName)
+        {
+            if(SelectedWord!=null)
+            {
+                List <string> lEnglishWords= LoadEnglishWordsFromFile(EnglishFileName);
+                List<ArabicTranslation> lArabicTranslations=LoadArabicTranslationsFromFile(ArabicTranslationsFileName);
+                
+                DeleteAllRecords(EnglishFileName, ArabicTranslationsFileName);
+
+                for (int i = 0; i < lEnglishWords.Count; i++)
+                {
+                    if (lEnglishWords[i] != SelectedWord)
+                    {
+                        SaveEnglishWordsToFile(lEnglishWords[i], EnglishFileName, true);
+
+                        SaveArabicTranslationsToFile(lArabicTranslations[i].Translation1, ArabicTranslationsFileName, true, true, lArabicTranslations[i].Translation2, lArabicTranslations[i].Translation3, lArabicTranslations[i].Translation4);
+                    }
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("You must select a word in order to delete it", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        internal static void EditWord(string OldSelectedWord,string NewWord, string EnglishFileName, string ArabicTranslationsFileName,ArabicTranslation Tranalations)
+        {
+            if (OldSelectedWord != null && NewWord!=null)
+            {
+                List<string> lEnglishWords = LoadEnglishWordsFromFile(EnglishFileName);
+                List<ArabicTranslation> lArabicTranslations = LoadArabicTranslationsFromFile(ArabicTranslationsFileName);
+
+                DeleteAllRecords(EnglishFileName, ArabicTranslationsFileName);
+
+                for (int i = 0; i < lEnglishWords.Count; i++)
+                {
+                    if (lEnglishWords[i] != OldSelectedWord)
+                    {
+                        SaveEnglishWordsToFile(lEnglishWords[i], EnglishFileName, true);
+
+                        SaveArabicTranslationsToFile(lArabicTranslations[i].Translation1, ArabicTranslationsFileName, true, true, lArabicTranslations[i].Translation2, lArabicTranslations[i].Translation3, lArabicTranslations[i].Translation4);
+                    }
+                    else
+                    {
+                        SaveEnglishWordsToFile(NewWord, EnglishFileName, true);
+
+                        SaveArabicTranslationsToFile(Tranalations.Translation1, ArabicTranslationsFileName, true, true, Tranalations.Translation2, Tranalations.Translation3, Tranalations.Translation4);
+                    }
+
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("You must Enter Updated Word with its translation/s", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

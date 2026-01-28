@@ -37,7 +37,6 @@
             this.colArabicTranslation3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colArabicTranslation4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.WordsListViewContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,6 +65,9 @@
             this.ptHeliaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zhHKHKHunYeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zhTvVHanHanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteAllWordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddEnglishWords = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnExit = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblSystemVolume = new System.Windows.Forms.Label();
@@ -134,22 +136,13 @@
             // 
             this.WordsListViewContextMenu.Font = new System.Drawing.Font("Cairo", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.WordsListViewContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshToolStripMenuItem,
             this.listViewToolStripMenuItem,
-            this.changeVoiceToolStripMenuItem});
+            this.changeVoiceToolStripMenuItem,
+            this.editWordToolStripMenuItem,
+            this.deleteWordToolStripMenuItem,
+            this.deleteAllWordsToolStripMenuItem});
             this.WordsListViewContextMenu.Name = "WordsListViewContextMenu";
-            this.WordsListViewContextMenu.Size = new System.Drawing.Size(297, 130);
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Font = new System.Drawing.Font("Cairo", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.ShortcutKeyDisplayString = "ctrl + shift + R";
-            this.refreshToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.R)));
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(296, 42);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
+            this.WordsListViewContextMenu.Size = new System.Drawing.Size(278, 214);
             // 
             // listViewToolStripMenuItem
             // 
@@ -160,7 +153,7 @@
             this.smallIconToolStripMenuItem,
             this.tileToolStripMenuItem});
             this.listViewToolStripMenuItem.Name = "listViewToolStripMenuItem";
-            this.listViewToolStripMenuItem.Size = new System.Drawing.Size(296, 42);
+            this.listViewToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
             this.listViewToolStripMenuItem.Text = "List View";
             // 
             // detailsToolStripMenuItem
@@ -235,7 +228,7 @@
             this.zhHKHKHunYeeToolStripMenuItem,
             this.zhTvVHanHanToolStripMenuItem});
             this.changeVoiceToolStripMenuItem.Name = "changeVoiceToolStripMenuItem";
-            this.changeVoiceToolStripMenuItem.Size = new System.Drawing.Size(296, 42);
+            this.changeVoiceToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
             this.changeVoiceToolStripMenuItem.Text = "Change Voice";
             // 
             // microsoftDavidDesktopToolStripMenuItem
@@ -408,6 +401,27 @@
             this.zhTvVHanHanToolStripMenuItem.Text = "zh-TvV_HanHan";
             this.zhTvVHanHanToolStripMenuItem.Click += new System.EventHandler(this.zhTvVHanHanToolStripMenuItem_Click);
             // 
+            // editWordToolStripMenuItem
+            // 
+            this.editWordToolStripMenuItem.Name = "editWordToolStripMenuItem";
+            this.editWordToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.editWordToolStripMenuItem.Text = "Edit Selected Word";
+            this.editWordToolStripMenuItem.Click += new System.EventHandler(this.editWordToolStripMenuItem_Click);
+            // 
+            // deleteWordToolStripMenuItem
+            // 
+            this.deleteWordToolStripMenuItem.Name = "deleteWordToolStripMenuItem";
+            this.deleteWordToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.deleteWordToolStripMenuItem.Text = "Delete Selected Word";
+            this.deleteWordToolStripMenuItem.Click += new System.EventHandler(this.deleteWordToolStripMenuItem_Click);
+            // 
+            // deleteAllWordsToolStripMenuItem
+            // 
+            this.deleteAllWordsToolStripMenuItem.Name = "deleteAllWordsToolStripMenuItem";
+            this.deleteAllWordsToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.deleteAllWordsToolStripMenuItem.Text = "Delete All Words";
+            this.deleteAllWordsToolStripMenuItem.Click += new System.EventHandler(this.deleteAllWordsToolStripMenuItem_Click);
+            // 
             // btnAddEnglishWords
             // 
             this.btnAddEnglishWords.BackColor = System.Drawing.Color.Transparent;
@@ -559,7 +573,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnAddEnglishWords;
         private Guna.UI2.WinForms.Guna2GradientButton btnExit;
         private System.Windows.Forms.ContextMenuStrip WordsListViewContextMenu;
-        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem detailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listToolStripMenuItem;
@@ -596,5 +609,8 @@
         private System.Windows.Forms.ToolStripMenuItem zhHKHKHunYeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zhTvVHanHanToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2GradientButton GSpeakSelectedWords;
+        private System.Windows.Forms.ToolStripMenuItem editWordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteWordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteAllWordsToolStripMenuItem;
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Speech.Synthesis;
 using System.Threading.Tasks;
+using System.Threading;
 
 
 namespace English_Learning_Management_System
@@ -15,7 +16,8 @@ namespace English_Learning_Management_System
     public partial class frmMainScreen : Form
     {
         Form frmLifeCycle;
-
+        string EnglishFileName = "EnglishWords.txt";
+        string ArabicTransaltionsFileName = "ArabicTranslationWords.txt";
 
         private MMDeviceEnumerator enumerator;
         private MMDevice device;
@@ -34,6 +36,7 @@ namespace English_Learning_Management_System
         {
             Form frmAddWords = new frmAddEnglishWords();
             frmAddWords.ShowDialog();
+            AddWordsToListView(true);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -95,12 +98,6 @@ namespace English_Learning_Management_System
             trackBar1.Value = (int)(device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
 
         }
-
-        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AddWordsToListView(true);
-        }
-
         public void RemovePreviouseCheckedItemForView(short ChoosedItemNumber)
         {
             if (detailsToolStripMenuItem.Checked && ChoosedItemNumber!=1)
@@ -157,13 +154,14 @@ namespace English_Learning_Management_System
         bool LEGACY = true;
         private void lstvWords_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)
         {
-            for (short i = 0; i < e.Item.SubItems.Count; i++)
+            if (lstvWords.SelectedItems.Count == 0)
             {
                 if (LEGACY)
-                 clsLib.SpellAWordLEGACY(e.Item.SubItems[i].Text);
+                    clsLib.SpellAWordLEGACY(e.Item.SubItems[0].Text);
                 else
-                 clsLib.SpellAWordMOD(e.Item.SubItems[i].Text);
+                    clsLib.SpellAWordMOD(e.Item.SubItems[0].Text);
             }
+            
             //The Main Item-> the first item -> the first column is stored as SubItems[0]
             //Additional Columns start from SubItems[1] and so on.
         }
@@ -404,6 +402,55 @@ namespace English_Learning_Management_System
             }
             
             
+        }
+
+        private void deleteAllWordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to delete all words ?", "Need Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                clsWord.DeleteAllRecords(EnglishFileName, ArabicTransaltionsFileName);
+                lstvWords.Items.Clear();
+            }
+        }
+
+        private void deleteWordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lstvWords.SelectedItems.Count==0)
+            {
+                MessageBox.Show("You must select a word first", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+            }
+
+            if (lstvWords.SelectedItems.Count >1)
+            {
+                MessageBox.Show("You must select Only One Word !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+            }
+
+            if (MessageBox.Show("Are you sure you want to delete selected word ?", "Need Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                clsWord.DeleteWord(lstvWords.SelectedItems[0].Text, EnglishFileName, ArabicTransaltionsFileName);
+                AddWordsToListView(true);
+            }
+
+        }
+
+        private void editWordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (lstvWords.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("You must select a word first", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (lstvWords.SelectedItems.Count > 1)
+            {
+                MessageBox.Show("You must select Only One Word ! \n You can edit only one word in one time", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            Form frmAddWords = new frmAddEnglishWords(true, lstvWords.SelectedItems[0].Text);
+            frmAddWords.ShowDialog();
+            AddWordsToListView(true);
         }
     }
 }

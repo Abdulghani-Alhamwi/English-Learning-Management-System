@@ -81,7 +81,7 @@
             this.txtBoxEnglishWord.BackColor = System.Drawing.Color.Transparent;
             this.txtBoxEnglishWord.BorderRadius = 40;
             this.txtBoxEnglishWord.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxEnglishWord.DefaultText = "Enter English Word/s";
+            this.txtBoxEnglishWord.DefaultText = "Enter English Word";
             this.txtBoxEnglishWord.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtBoxEnglishWord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtBoxEnglishWord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -162,7 +162,7 @@
             this.txtArabicWord.BackColor = System.Drawing.Color.Transparent;
             this.txtArabicWord.BorderRadius = 40;
             this.txtArabicWord.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtArabicWord.DefaultText = "Enter Arabic Translation/s";
+            this.txtArabicWord.DefaultText = "Enter Arabic Translation";
             this.txtArabicWord.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtArabicWord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtArabicWord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

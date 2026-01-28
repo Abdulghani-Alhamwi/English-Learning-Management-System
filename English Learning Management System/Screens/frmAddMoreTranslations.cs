@@ -5,6 +5,7 @@ using System.Web.UI.Design;
 using System.Drawing;
 using System.Windows.Forms;
 using Lib;
+using System.Management;
 
 namespace English_Learning_Management_System.Screens
 {
@@ -12,13 +13,20 @@ namespace English_Learning_Management_System.Screens
     {
         private string _EnglishWord, _ArabicTranslation1;
         frmAddEnglishWords FormToHandleClose;
-        public frmAddMoreTranslations(frmAddEnglishWords frm, string EnglshWord, string ArabicTranslation1)
+
+        bool EditMode = false;
+        string OldWord;
+        public frmAddMoreTranslations(frmAddEnglishWords frm, string EnglshWord, string ArabicTranslation1,string OldSelectedWord=null,bool EditWordMode=false)
         {
             InitializeComponent();
             clsLib.ChangeFormProperties(this, Convert.ToInt16(this.Width), Convert.ToInt16(this.Height));
             _EnglishWord = EnglshWord;
             _ArabicTranslation1 = ArabicTranslation1;
             FormToHandleClose = frm;
+
+            EditMode = EditWordMode;
+            OldWord=OldSelectedWord;
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -35,7 +43,7 @@ namespace English_Learning_Management_System.Screens
         {
             if ((txtGArabicTranslation2.Text == "" || txtGArabicTranslation2.Text == "Enter Arabic Translation 2") && (txtGArabicTranslation3.Text == "" || txtGArabicTranslation3.Text == "Enter Arabic Translation 3") && (txtGArabicTranslation4.Text == "" || txtGArabicTranslation4.Text == "Enter Arabic Translation 4"))
             {
-                DialogResult Result = MessageBox.Show($"Are you sure you don't want to add more translations and save the english word ({_EnglishWord}) + its One translation ({_ArabicTranslation1})", "Details", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                DialogResult Result = MessageBox.Show($"Are you sure you don't want to add more translations and save the english word ({_EnglishWord}) + its One translation ({_ArabicTranslation1})", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
                 if (Result == DialogResult.OK)
                 {
@@ -55,12 +63,49 @@ namespace English_Learning_Management_System.Screens
 
         private void btnAddTranslations_Click(object sender, EventArgs e)
         {
-            if (_EnglishWord != "")
-                clsWord.SaveEnglishWordsToFile(_EnglishWord, "EnglishWords.txt", true);
+            if (!EditMode)
+            {
+                if (_EnglishWord != "")
+                    clsWord.SaveEnglishWordsToFile(_EnglishWord, "EnglishWords.txt", true);
 
-            if (_ArabicTranslation1 != "")
-                _SaveArabicTranslations();
+                if (_ArabicTranslation1 != "")
+                    _SaveArabicTranslations();
+            }
+            else
+            {
+                    clsWord.ATranslations = new clsWord.ArabicTranslation();
+                    clsWord.ATranslations.Translation1 = _ArabicTranslation1;
 
+                    if ((txtGArabicTranslation2.Text == "" || txtGArabicTranslation2.Text == "Enter Arabic Translation 2") && (txtGArabicTranslation3.Text == "" || txtGArabicTranslation3.Text == "Enter Arabic Translation 3") && (txtGArabicTranslation4.Text == "" || txtGArabicTranslation4.Text == "Enter Arabic Translation 4"))
+                {
+
+                    DialogResult Result = MessageBox.Show($"Are you sure you don't want to add more translations and save the english word ({_EnglishWord}) + its One translation ({_ArabicTranslation1})", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                    if (Result == DialogResult.OK)
+                    {
+                        clsWord.EditWord(OldWord, _EnglishWord, "EnglishWords.txt", "ArabicTranslationWords.txt", clsWord.ATranslations);
+                        this.Close();
+                        return;
+                    }
+                }
+                else
+                {
+                    if(txtGArabicTranslation2.Text !="")
+                        clsWord.ATranslations.Translation2 = txtGArabicTranslation2.Text;
+
+                    if (txtGArabicTranslation3.Text !="")
+                        clsWord.ATranslations.Translation3 = txtGArabicTranslation3.Text;
+
+                    if (txtGArabicTranslation4.Text !="")
+                        clsWord.ATranslations.Translation4 = txtGArabicTranslation4.Text;
+
+                    clsWord.EditWord(OldWord, _EnglishWord, "EnglishWords.txt", "ArabicTranslationWords.txt", clsWord.ATranslations);
+
+                    MessageBox.Show("Updated Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Close();
+                }
+            }
         }
 
         private void txtBox_Enter(object sender, EventArgs e)

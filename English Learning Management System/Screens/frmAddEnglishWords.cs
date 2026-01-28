@@ -1,29 +1,46 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using Lib;
+using System;
 using System.ComponentModel;
-using Lib;
+using System.Drawing;
+using System.Net.NetworkInformation;
+using System.Windows.Forms;
 
 namespace English_Learning_Management_System.Screens
 {
     public partial class frmAddEnglishWords : Form
     {
-        public frmAddEnglishWords()
+        bool EditWordMode = false;
+        string OldSelectedWord;
+        public frmAddEnglishWords(bool EditWord=false, string OldWord = null)
         {
             InitializeComponent();
             clsLib.ChangeFormProperties(this, Convert.ToInt16(this.Width),Convert.ToInt16 (this.Height));
-            
+            EditWordMode = EditWord;
+            OldSelectedWord = OldWord;
         }
 
         private void btnAddWords_Click(object sender, EventArgs e)
         {
-            if ((txtBoxEnglishWord.Text != "" && txtBoxEnglishWord.Text!="Enter English Word/s") && (txtArabicWord.Text!="" && txtArabicWord.Text!="Enter Arabic Translation/s"))
+            if ((txtBoxEnglishWord.Text != "" && txtBoxEnglishWord.Text!="Enter English Word/s") && (txtArabicWord.Text!="" && txtArabicWord.Text!="Enter Arabic Translation"))
             {
-                if(clsWord.SaveEnglishWordsToFile(txtBoxEnglishWord.Text, "EnglishWords.txt", true)&& clsWord.SaveArabicTranslationsToFile(txtArabicWord.Text, "ArabicTranslationWords.txt", true))
-                   MessageBox.Show("Word added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtBoxEnglishWord.Clear();
-                txtArabicWord.Clear();
-                this.Close();
+                if (!EditWordMode)
+                {
+                    if (clsWord.SaveEnglishWordsToFile(txtBoxEnglishWord.Text, "EnglishWords.txt", true) && clsWord.SaveArabicTranslationsToFile(txtArabicWord.Text, "ArabicTranslationWords.txt", true))
+                        MessageBox.Show("Word added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtBoxEnglishWord.Clear();
+                    txtArabicWord.Clear();
+                    this.Close();
+                }
+                else
+                {
+                    if (OldSelectedWord != null)
+                    {
+                        clsWord.ATranslations = new clsWord.ArabicTranslation();
+                        clsWord.ATranslations.Translation1 = txtArabicWord.Text;
+                        clsWord.EditWord(OldSelectedWord, txtBoxEnglishWord.Text, "EnglishWords.txt", "ArabicTranslationWords.txt", clsWord.ATranslations);
+                    }
+                }    
             }
         }
 
@@ -37,6 +54,8 @@ namespace English_Learning_Management_System.Screens
         private void frmAddEnglishWords_Load(object sender, EventArgs e)
         {
             btnExit.CausesValidation = false;
+            if (EditWordMode)
+                btnAddWords.Text = "Update Word";
          
         }
         bool AllowTabMovingForControl = false;
@@ -49,13 +68,13 @@ namespace English_Learning_Management_System.Screens
         {
             AllowTabMovingForControl = false;
 
-            if (((Guna.UI2.WinForms.Guna2TextBox)sender).Tag.ToString() == "A" && (((Guna.UI2.WinForms.Guna2TextBox)sender).Text=="" || ((Guna.UI2.WinForms.Guna2TextBox)sender).Text== "Enter Arabic Translation/s"))
+            if (((Guna.UI2.WinForms.Guna2TextBox)sender).Tag.ToString() == "A" && (((Guna.UI2.WinForms.Guna2TextBox)sender).Text=="" || ((Guna.UI2.WinForms.Guna2TextBox)sender).Text== "Enter Arabic Translation"))
             {
                 txtArabicWord.Clear();
                 txtArabicWord.ForeColor = Color.FromArgb(255, 30, 30, 30);
                 txtBoxEnglishWord.CausesValidation = false;
             }
-            else if(((Guna.UI2.WinForms.Guna2TextBox)sender).Text=="" || ((Guna.UI2.WinForms.Guna2TextBox)sender).Text=="Enter English Word/s")
+            else if(((Guna.UI2.WinForms.Guna2TextBox)sender).Text=="" || ((Guna.UI2.WinForms.Guna2TextBox)sender).Text=="Enter English Word")
             {
                 txtBoxEnglishWord.Clear();
                 txtBoxEnglishWord.ForeColor = Color.FromArgb(255, 30, 30, 30);
@@ -69,13 +88,13 @@ namespace English_Learning_Management_System.Screens
             {
                 if (((Guna.UI2.WinForms.Guna2TextBox)sender).Tag.ToString() == "A")
                 {
-                    txtArabicWord.Text = "Enter Arabic Translation/s";
+                    txtArabicWord.Text = "Enter Arabic Translation";
                     txtArabicWord.ForeColor = Color.FromArgb(255, 60, 60, 60);
                     txtBoxEnglishWord.CausesValidation = true;
                 }
                 else
                 {
-                    txtBoxEnglishWord.Text = "Enter English Word/s";
+                    txtBoxEnglishWord.Text = "Enter English Word";
                     txtBoxEnglishWord.ForeColor = Color.FromArgb(255, 60, 60, 60);
                     txtArabicWord.CausesValidation = true;
                 }
@@ -88,7 +107,7 @@ namespace English_Learning_Management_System.Screens
         {
             if(txtBoxEnglishWord.Text!="" && txtArabicWord.Text!="")
             {
-                Form frmMoreArabicTranslations = new frmAddMoreTranslations(this,txtBoxEnglishWord.Text, txtArabicWord.Text);
+                Form frmMoreArabicTranslations = new frmAddMoreTranslations(this,txtBoxEnglishWord.Text, txtArabicWord.Text,OldSelectedWord,EditWordMode);
                 frmMoreArabicTranslations.ShowDialog();
                 
             }
