@@ -29,13 +29,7 @@ D:\My Projects\English-Learning-Management-System\English Learning Management Sy
 D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\Guna.UI2.dll
 D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\Microsoft.Speech.dll
 D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\NAudio.dll
-D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
-D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\System.Memory.dll
-D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Debug\System.Numerics.Vectors.dll
 D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Debug\English Learning Management System.csproj.AssemblyReference.cache
-D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Debug\English Learning Management System.csproj.SuggestedBindingRedirects.cache
-D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Debug\English Learning Management System.exe.config
 D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Debug\English_Learning_Management_System.Screens.frmAddEnglishWords.resources
 D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Debug\English_Learning_Management_System.Screens.frmAddMoreTranslations.resources
 D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Debug\English_Learning_Management_System.Screens.frmExamplesInsertion.resources

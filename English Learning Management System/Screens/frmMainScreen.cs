@@ -417,20 +417,17 @@ namespace English_Learning_Management_System
         {
             if (lstvWords.SelectedItems.Count==0)
             {
-                MessageBox.Show("You must select a word first", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-            }
-
-            if (lstvWords.SelectedItems.Count >1)
-            {
-                MessageBox.Show("You must select Only One Word !", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("You must select word/s you want to delete first", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
             }
 
             if (MessageBox.Show("Are you sure you want to delete selected word ?", "Need Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                clsWord.DeleteWord(lstvWords.SelectedItems[0].Text, EnglishFileName, ArabicTransaltionsFileName);
-                AddWordsToListView(true);
+                for (int i = 0; i < lstvWords.SelectedItems.Count; i++)
+                {
+                    clsWord.DeleteWord(lstvWords.SelectedItems[i].Text, EnglishFileName, ArabicTransaltionsFileName);
+                }
+                    AddWordsToListView(true);
             }
 
         }

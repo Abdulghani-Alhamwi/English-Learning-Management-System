@@ -142,7 +142,7 @@
             this.deleteWordToolStripMenuItem,
             this.deleteAllWordsToolStripMenuItem});
             this.WordsListViewContextMenu.Name = "WordsListViewContextMenu";
-            this.WordsListViewContextMenu.Size = new System.Drawing.Size(278, 214);
+            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 214);
             // 
             // listViewToolStripMenuItem
             // 
@@ -153,7 +153,7 @@
             this.smallIconToolStripMenuItem,
             this.tileToolStripMenuItem});
             this.listViewToolStripMenuItem.Name = "listViewToolStripMenuItem";
-            this.listViewToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.listViewToolStripMenuItem.Size = new System.Drawing.Size(340, 42);
             this.listViewToolStripMenuItem.Text = "List View";
             // 
             // detailsToolStripMenuItem
@@ -228,7 +228,7 @@
             this.zhHKHKHunYeeToolStripMenuItem,
             this.zhTvVHanHanToolStripMenuItem});
             this.changeVoiceToolStripMenuItem.Name = "changeVoiceToolStripMenuItem";
-            this.changeVoiceToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.changeVoiceToolStripMenuItem.Size = new System.Drawing.Size(340, 42);
             this.changeVoiceToolStripMenuItem.Text = "Change Voice";
             // 
             // microsoftDavidDesktopToolStripMenuItem
@@ -404,21 +404,22 @@
             // editWordToolStripMenuItem
             // 
             this.editWordToolStripMenuItem.Name = "editWordToolStripMenuItem";
-            this.editWordToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.editWordToolStripMenuItem.Size = new System.Drawing.Size(340, 42);
             this.editWordToolStripMenuItem.Text = "Edit Selected Word";
             this.editWordToolStripMenuItem.Click += new System.EventHandler(this.editWordToolStripMenuItem_Click);
             // 
             // deleteWordToolStripMenuItem
             // 
             this.deleteWordToolStripMenuItem.Name = "deleteWordToolStripMenuItem";
-            this.deleteWordToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
-            this.deleteWordToolStripMenuItem.Text = "Delete Selected Word";
+            this.deleteWordToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
+            this.deleteWordToolStripMenuItem.Size = new System.Drawing.Size(340, 42);
+            this.deleteWordToolStripMenuItem.Text = "Delete Selected Word/s";
             this.deleteWordToolStripMenuItem.Click += new System.EventHandler(this.deleteWordToolStripMenuItem_Click);
             // 
             // deleteAllWordsToolStripMenuItem
             // 
             this.deleteAllWordsToolStripMenuItem.Name = "deleteAllWordsToolStripMenuItem";
-            this.deleteAllWordsToolStripMenuItem.Size = new System.Drawing.Size(277, 42);
+            this.deleteAllWordsToolStripMenuItem.Size = new System.Drawing.Size(340, 42);
             this.deleteAllWordsToolStripMenuItem.Text = "Delete All Words";
             this.deleteAllWordsToolStripMenuItem.Click += new System.EventHandler(this.deleteAllWordsToolStripMenuItem_Click);
             // 
