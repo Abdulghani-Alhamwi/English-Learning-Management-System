@@ -63,7 +63,7 @@
             this.btnAddWords.HoverState.FillColor = System.Drawing.Color.DarkGreen;
             this.btnAddWords.HoverState.FillColor2 = System.Drawing.Color.OliveDrab;
             this.btnAddWords.IndicateFocus = true;
-            this.btnAddWords.Location = new System.Drawing.Point(274, 451);
+            this.btnAddWords.Location = new System.Drawing.Point(280, 451);
             this.btnAddWords.Name = "btnAddWords";
             this.btnAddWords.PressedColor = System.Drawing.Color.LightGreen;
             this.btnAddWords.Size = new System.Drawing.Size(305, 80);
@@ -94,7 +94,7 @@
             this.txtBoxEnglishWord.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtBoxEnglishWord.IconLeft")));
             this.txtBoxEnglishWord.IconLeftOffset = new System.Drawing.Point(15, 0);
             this.txtBoxEnglishWord.IconLeftSize = new System.Drawing.Size(40, 40);
-            this.txtBoxEnglishWord.Location = new System.Drawing.Point(122, 141);
+            this.txtBoxEnglishWord.Location = new System.Drawing.Point(128, 141);
             this.txtBoxEnglishWord.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.txtBoxEnglishWord.MaxLength = 5000;
             this.txtBoxEnglishWord.Name = "txtBoxEnglishWord";
@@ -175,7 +175,7 @@
             this.txtArabicWord.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtArabicWord.IconLeft")));
             this.txtArabicWord.IconLeftOffset = new System.Drawing.Point(15, 0);
             this.txtArabicWord.IconLeftSize = new System.Drawing.Size(40, 40);
-            this.txtArabicWord.Location = new System.Drawing.Point(122, 289);
+            this.txtArabicWord.Location = new System.Drawing.Point(128, 289);
             this.txtArabicWord.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.txtArabicWord.MaxLength = 5000;
             this.txtArabicWord.Name = "txtArabicWord";
@@ -212,7 +212,7 @@
             this.btngAddMoreTranslations.HoverState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.btngAddMoreTranslations.HoverState.FillColor2 = System.Drawing.Color.DarkViolet;
             this.btngAddMoreTranslations.IndicateFocus = true;
-            this.btngAddMoreTranslations.Location = new System.Drawing.Point(27, 435);
+            this.btngAddMoreTranslations.Location = new System.Drawing.Point(33, 435);
             this.btngAddMoreTranslations.Name = "btngAddMoreTranslations";
             this.btngAddMoreTranslations.PressedColor = System.Drawing.Color.Indigo;
             this.btngAddMoreTranslations.Size = new System.Drawing.Size(194, 112);
