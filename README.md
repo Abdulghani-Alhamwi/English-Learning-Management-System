@@ -100,8 +100,3 @@ This approach reduces code duplication and simplifies long-term maintenance.
 3. Implement learning progress tracking and analytics
 
 ---
-
-## 📌 Notes
-
-* This project is intended for **educational purposes**
-* Code structure prioritizes **clarity, reuse, and maintainability**
