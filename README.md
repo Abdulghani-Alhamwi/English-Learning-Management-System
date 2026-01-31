@@ -98,5 +98,3 @@ This approach reduces code duplication and simplifies long-term maintenance.
 1. Migrate storage from file system to **database-based storage**
 2. Add responsive UI support
 3. Implement learning progress tracking and analytics
-
----
