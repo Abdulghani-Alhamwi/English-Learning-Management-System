@@ -4,11 +4,11 @@
 
 ---
 
-## 🚀 Project Overview:
+## 🚀 Project Overview :
 
 The application starts with a **splash screen** displaying a progress bar and initialization status, followed by the main interface where users can manage vocabulary and access learning presentation modes.
 
-The project emphasizes:
+The project emphasizes :
 
 * Clean architecture.
 * Shared logic.
@@ -18,13 +18,13 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## ✨ Features:
+## ✨ Features :
 
 ### 🗄️ Storage System
 
 * **File system–based storage** is used to persist English words and their Arabic translations locally.
 
-### 📌 Core Features:
+### 📌 Core Features :
 
 1. Splash screen with progress bar and initialization message.
 2. Add English words.
@@ -41,7 +41,7 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## 🎓 Learning / Presentation Mode:
+## 🎓 Learning / Presentation Mode :
 
 1. Select **1–4 words**.
 2. Add English example sentences.
@@ -54,7 +54,7 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## 🖥️ Display Options for the Presentation Mode:
+## 🖥️ Display Options for the Presentation Mode :
 
 * Desktop **full-screen mode**.
 * **Mobile-size simulation** form.
@@ -63,7 +63,7 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## 🧠 Architecture & Code Quality:
+## 🧠 Architecture & Code Quality :
 
 * Centralized reusable methods.
 * No duplicated business logic.
@@ -71,7 +71,7 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## 🛠️ Technologies:
+## 🛠️ Technologies :
 
 * **C#**.
 * **WinForms**.
@@ -80,7 +80,7 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## ▶️ How to Run:
+## ▶️ How to Run :
 
 > ⚠️ Requires **Visual Studio 2026**.
 
@@ -92,8 +92,8 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Enhancements :
 
-1. Migrate storage from file system to **database-based storage**.
+1. Migrate storage from file system to **relational database**.
 2. Add responsive UI support.
 3. Implement learning progress tracking and analytics.
