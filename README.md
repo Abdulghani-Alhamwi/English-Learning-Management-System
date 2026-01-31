@@ -4,66 +4,66 @@
 
 ---
 
-## 🚀 Project Overview :
+## 🚀 Project Overview:
 
 The application starts with a **splash screen** displaying a progress bar and initialization status, followed by the main interface where users can manage vocabulary and access learning presentation modes.
 
 The project emphasizes:
 
-* Clean architecture
-* Shared logic
-* Reusable components
+* Clean architecture.
+* Shared logic.
+* Reusable components.
 
 This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## ✨ Features :
+## ✨ Features:
 
 ### 🗄️ Storage System
 
-* **File system–based storage** is used to persist English words and their Arabic translations locally
+* **File system–based storage** is used to persist English words and their Arabic translations locally.
 
-### 📌 Core Features :
+### 📌 Core Features:
 
-1. Splash screen with progress bar and initialization message
-2. Add English words
-3. Each word supports **up to 4 Arabic translations**
-4. English pronunciation with configurable voice
-5. System sound control via **TrackBar**
+1. Splash screen with progress bar and initialization message.
+2. Add English words.
+3. Each word supports **up to 4 Arabic translations**.
+4. English pronunciation with configurable voice.
+5. System sound control via **TrackBar**.
 6. **ListView** with Context Menu:
 
-   * Change view mode
-   * Edit word
-   * Delete single word
-   * Delete multiple selected words
-   * Delete all words
+   * Change view mode.
+   * Edit word.
+   * Delete single word.
+   * Delete multiple selected words.
+   * Delete all words.
 
 ---
 
-## 🎓 Learning / Presentation Mode :
+## 🎓 Learning / Presentation Mode:
 
-1. Select **1–4 words**
-2. Add English example sentences
-3. Add Arabic translations for each example
+1. Select **1–4 words**.
+2. Add English example sentences.
+3. Add Arabic translations for each example.
 4. Automatic presentation including:
 
-   * Word pronunciation
-   * Translation display
-   * Example pronunciation
+   * Word pronunciation.
+   * Translation display.
+   * Example pronunciation.
 
 ---
 
 ## 🖥️ Display Options for the Presentation Mode:
 
-* Desktop **full-screen mode**
-* **Mobile-size simulation** form
+* Desktop **full-screen mode**.
+* **Mobile-size simulation** form.
 
 > ⚠️ Responsive behavior is **not implemented in this version** and is planned as a future enhancement.
 
 ---
 
-## 🧠 Architecture & Code Quality :
+## 🧠 Architecture & Code Quality:
 
 * Centralized reusable methods.
 * No duplicated business logic.
@@ -71,29 +71,29 @@ This approach reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## 🛠️ Technologies :
+## 🛠️ Technologies:
 
-* **C#**
-* **WinForms**
-* **.NET Framework 4.8.1**
-* **Visual Studio 2026**
+* **C#**.
+* **WinForms**.
+* **.NET Framework 4.8.1**.
+* **Visual Studio 2026**.
 
 ---
 
-## ▶️ How to Run :
+## ▶️ How to Run:
 
 > ⚠️ Requires **Visual Studio 2026**.
 
-1. Clone or download the repository
-2. Open the solution in **Visual Studio 2026**
-3. Ensure **.NET Framework 4.8.1** is installed
-4. Set the project as **Startup Project**
-5. Press **F5** to run
+1. Clone or download the repository.
+2. Open the solution in **Visual Studio 2026**.
+3. Ensure **.NET Framework 4.8.1** is installed.
+4. Set the project as **Startup Project**.
+5. Press **F5** to run.
 
 ---
 
 ## 🔮 Future Enhancements
 
-1. Migrate storage from file system to **database-based storage**
-2. Add responsive UI support
-3. Implement learning progress tracking and analytics
+1. Migrate storage from file system to **database-based storage**.
+2. Add responsive UI support.
+3. Implement learning progress tracking and analytics.
