@@ -17,6 +17,10 @@ namespace English_Learning_Management_System.Screens
             clsLib.ChangeFormProperties(this, Convert.ToInt16(this.Width),Convert.ToInt16 (this.Height));
             EditWordMode = EditWord;
             OldSelectedWord = OldWord;
+
+            if (EditWordMode)
+                btnAddWords.Text = "Update Word";
+
         }
 
         private void btnAddWords_Click(object sender, EventArgs e)
@@ -54,9 +58,6 @@ namespace English_Learning_Management_System.Screens
         private void frmAddEnglishWords_Load(object sender, EventArgs e)
         {
             btnExit.CausesValidation = false;
-            if (EditWordMode)
-                btnAddWords.Text = "Update Word";
-         
         }
         bool AllowTabMovingForControl = false;
         private void txtBoxWord_Validating(object sender, CancelEventArgs e)
