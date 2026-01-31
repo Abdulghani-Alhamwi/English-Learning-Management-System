@@ -43,6 +43,11 @@ namespace English_Learning_Management_System.Screens
                         clsWord.ATranslations = new clsWord.ArabicTranslation();
                         clsWord.ATranslations.Translation1 = txtArabicWord.Text;
                         clsWord.EditWord(OldSelectedWord, txtBoxEnglishWord.Text, "EnglishWords.txt", "ArabicTranslationWords.txt", clsWord.ATranslations);
+                        MessageBox.Show("Word updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        txtBoxEnglishWord.Clear();
+                        txtArabicWord.Clear();
+                        this.Close();
                     }
                 }    
             }
