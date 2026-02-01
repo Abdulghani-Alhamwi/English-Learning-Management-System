@@ -59,7 +59,7 @@ This approach reduces code duplication and simplifies long-term maintenance.
 * Desktop **full-screen mode**.
 * **Mobile-size simulation** form.
 
-> ⚠️ Responsive behavior is **not implemented in this version** and is planned as a future enhancement.
+⚠️ Responsive behavior is **not implemented in this version** and is planned as a future enhancement.
 
 ---
 
@@ -85,9 +85,9 @@ This approach reduces code duplication and simplifies long-term maintenance.
 > ⚠️ Requires **Visual Studio 2026**.
 
 1. Clone or download the repository.
-2. Open the solution in **Visual Studio 2026**.
-3. Ensure **.NET Framework 4.8.1** is installed.
-4. Set the project as **Startup Project**.
+2. Edit your **Display Scale To : 100 ** to ensure everything being shown in a proper size because responsive is not added yet at this version.
+3. Open the solution in **Visual Studio 2026**.
+4. Ensure **.NET Framework 4.8.1** is installed.
 5. Press **F5** to run.
 
 ---
