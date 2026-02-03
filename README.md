@@ -50,25 +50,6 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 * Generates **Arabic translations** of those examples strictly using the word’s provided translations
 * Ensures examples are clear, relevant, and suitable for vocabulary practice
 
-**Example code snippet in `clsWord`:**
-
-```csharp
-private async void btnSpeakSelectedWords_Click(object sender, EventArgs e)
-{
-    foreach (ListViewItem item in lstWords.SelectedItems)
-    {
-        await clsWord.Run(item.Text);
-
-        MessageBox.Show(
-            $"English: {clsWord.WordExample.ExampleInEnglish}\nArabic: {clsWord.WordExample.ExampleInArabic}",
-            "Word Example",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Information
-        );
-    }
-}
-```
-
 ---
 
 ## 🎓 Learning / Presentation Mode
