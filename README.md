@@ -101,8 +101,6 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 4. Ensure **.NET Framework 4.8.1** is installed
 5. Set your **Google AI API key** in `clsWord`:
 
-```csharp
-internal static string apiKey = "YOUR_GOOGLE_AI_KEY";
 ```
 
 > The API key is free from **Google AI Studio** but has daily usage limits.
