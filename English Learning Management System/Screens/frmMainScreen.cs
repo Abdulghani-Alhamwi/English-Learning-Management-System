@@ -96,7 +96,7 @@ namespace English_Learning_Management_System
 
             device = enumerator.GetDefaultAudioEndpoint(DataFlow.Render, Role.Multimedia);
             trackBar1.Value = (int)(device.AudioEndpointVolume.MasterVolumeLevelScalar * 100);
-
+            clsLib.ChangeSpellVoiceMOD(AllInstalledVoices[3]);
         }
         public void RemovePreviouseCheckedItemForView(short ChoosedItemNumber)
         {
@@ -151,7 +151,7 @@ namespace English_Learning_Management_System
         {
             device.AudioEndpointVolume.MasterVolumeLevelScalar = (trackBar1.Value / 100.0f);
         }
-        bool LEGACY = true;
+        bool LEGACY = false;
         private void lstvWords_ItemMouseHover(object sender, ListViewItemMouseHoverEventArgs e)
         {
             if (lstvWords.SelectedItems.Count == 0)

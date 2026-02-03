@@ -1,13 +1,9 @@
 ﻿using Guna.UI2.WinForms;
+using Lib;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Http;
 using System.Windows.Forms;
 
 namespace English_Learning_Management_System.Screens
@@ -180,6 +176,39 @@ namespace English_Learning_Management_System.Screens
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private async void frmExamplesInsertion_Load(object sender, EventArgs e)
+        {
+            for (short i = 0; i < _NumberOfSelectedItems; i++)
+            {
+                if (i == 0)
+                {
+                    await clsWord.Run(lstItems[i].Text, lstItems[i]);
+                    txtGExampleEWord1.Text = clsWord.WordExample.ExampleInEnglish;
+                    GtxtExample1Transaltion.Text = clsWord.WordExample.ExampleInArabic;
+                }
+
+                if (i == 1)
+                {
+                    await clsWord.Run(lstItems[i].Text, lstItems[i]);
+                    txtGExampleEWord2.Text = clsWord.WordExample.ExampleInEnglish;
+                    GtxtExample2Translation.Text = clsWord.WordExample.ExampleInArabic;
+                }
+
+                if (i == 2)
+                {
+                    await clsWord.Run(lstItems[i].Text, lstItems[i]);
+                    txtGEWord3.Text = clsWord.WordExample.ExampleInEnglish;
+                    GtxtExample3Translation.Text = clsWord.WordExample.ExampleInArabic;
+                }
+                if (i == 3)
+                {
+                    await clsWord.Run(lstItems[i].Text, lstItems[i]);
+                    txtGEWord4.Text = clsWord.WordExample.ExampleInEnglish;
+                    GtxtExample4Translation.Text = clsWord.WordExample.ExampleInArabic;
+                }
+            }
         }
     }
 }

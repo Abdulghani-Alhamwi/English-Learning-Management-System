@@ -142,7 +142,7 @@
             this.deleteWordToolStripMenuItem,
             this.deleteAllWordsToolStripMenuItem});
             this.WordsListViewContextMenu.Name = "WordsListViewContextMenu";
-            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 214);
+            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 236);
             // 
             // listViewToolStripMenuItem
             // 
@@ -233,9 +233,7 @@
             // 
             // microsoftDavidDesktopToolStripMenuItem
             // 
-            this.microsoftDavidDesktopToolStripMenuItem.Checked = true;
             this.microsoftDavidDesktopToolStripMenuItem.CheckOnClick = true;
-            this.microsoftDavidDesktopToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.microsoftDavidDesktopToolStripMenuItem.Name = "microsoftDavidDesktopToolStripMenuItem";
             this.microsoftDavidDesktopToolStripMenuItem.Size = new System.Drawing.Size(307, 42);
             this.microsoftDavidDesktopToolStripMenuItem.Text = "Microsoft David Desktop";
@@ -275,7 +273,9 @@
             // 
             // herenaToolStripMenuItem1
             // 
+            this.herenaToolStripMenuItem1.Checked = true;
             this.herenaToolStripMenuItem1.CheckOnClick = true;
+            this.herenaToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.herenaToolStripMenuItem1.Name = "herenaToolStripMenuItem1";
             this.herenaToolStripMenuItem1.Size = new System.Drawing.Size(307, 42);
             this.herenaToolStripMenuItem1.Text = "Herena";

@@ -71,7 +71,7 @@
             this.GbtnTranslation1.HoverState.FillColor = System.Drawing.Color.Indigo;
             this.GbtnTranslation1.HoverState.FillColor2 = System.Drawing.Color.DarkGoldenrod;
             this.GbtnTranslation1.IndicateFocus = true;
-            this.GbtnTranslation1.Location = new System.Drawing.Point(55, 208);
+            this.GbtnTranslation1.Location = new System.Drawing.Point(55, 234);
             this.GbtnTranslation1.Name = "GbtnTranslation1";
             this.GbtnTranslation1.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation1.PressedDepth = 50;
@@ -101,7 +101,7 @@
             this.GbtnTranslation2.HoverState.FillColor = System.Drawing.Color.Indigo;
             this.GbtnTranslation2.HoverState.FillColor2 = System.Drawing.Color.DarkGoldenrod;
             this.GbtnTranslation2.IndicateFocus = true;
-            this.GbtnTranslation2.Location = new System.Drawing.Point(55, 369);
+            this.GbtnTranslation2.Location = new System.Drawing.Point(55, 395);
             this.GbtnTranslation2.Name = "GbtnTranslation2";
             this.GbtnTranslation2.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation2.PressedDepth = 50;
@@ -131,7 +131,7 @@
             this.GbtnTranslation3.HoverState.FillColor = System.Drawing.Color.Indigo;
             this.GbtnTranslation3.HoverState.FillColor2 = System.Drawing.Color.DarkGoldenrod;
             this.GbtnTranslation3.IndicateFocus = true;
-            this.GbtnTranslation3.Location = new System.Drawing.Point(55, 530);
+            this.GbtnTranslation3.Location = new System.Drawing.Point(55, 556);
             this.GbtnTranslation3.Name = "GbtnTranslation3";
             this.GbtnTranslation3.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation3.PressedDepth = 50;
@@ -161,7 +161,7 @@
             this.GbtnTranslation4.HoverState.FillColor = System.Drawing.Color.Indigo;
             this.GbtnTranslation4.HoverState.FillColor2 = System.Drawing.Color.DarkGoldenrod;
             this.GbtnTranslation4.IndicateFocus = true;
-            this.GbtnTranslation4.Location = new System.Drawing.Point(55, 691);
+            this.GbtnTranslation4.Location = new System.Drawing.Point(55, 717);
             this.GbtnTranslation4.Name = "GbtnTranslation4";
             this.GbtnTranslation4.PressedColor = System.Drawing.Color.Purple;
             this.GbtnTranslation4.PressedDepth = 50;
@@ -213,7 +213,7 @@
             this.lblExample.ForeColor = System.Drawing.Color.FloralWhite;
             this.lblExample.Location = new System.Drawing.Point(55, 272);
             this.lblExample.Name = "lblExample";
-            this.lblExample.Size = new System.Drawing.Size(501, 336);
+            this.lblExample.Size = new System.Drawing.Size(501, 388);
             this.lblExample.TabIndex = 34;
             this.lblExample.Text = "label1";
             this.lblExample.Visible = false;
@@ -223,7 +223,7 @@
             this.lblTranslation.BackColor = System.Drawing.Color.Transparent;
             this.lblTranslation.Font = new System.Drawing.Font("Cairo", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblTranslation.ForeColor = System.Drawing.Color.FloralWhite;
-            this.lblTranslation.Location = new System.Drawing.Point(29, 607);
+            this.lblTranslation.Location = new System.Drawing.Point(29, 648);
             this.lblTranslation.Name = "lblTranslation";
             this.lblTranslation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTranslation.Size = new System.Drawing.Size(501, 297);
@@ -239,16 +239,19 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.Controls.Add(this.guna2ProgressIndicator1);
-            this.guna2GradientPanel1.Controls.Add(this.lblReady);
-            this.guna2GradientPanel1.Controls.Add(this.GbtnEnglishWord);
             this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation1);
+            this.guna2GradientPanel1.Controls.Add(this.guna2ProgressIndicator1);
+            this.guna2GradientPanel1.Controls.Add(this.GbtnEnglishWord);
             this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation4);
             this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation2);
             this.guna2GradientPanel1.Controls.Add(this.GbtnTranslation3);
             this.guna2GradientPanel1.Controls.Add(this.lblTE);
             this.guna2GradientPanel1.Controls.Add(this.lblTranslation);
             this.guna2GradientPanel1.Controls.Add(this.lblExample);
+            this.guna2GradientPanel1.Controls.Add(this.lblReady);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(29, 12);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(670, 1100);
@@ -274,11 +277,11 @@
             this.GbtnEnglishWord.HoverState.FillColor = System.Drawing.Color.Indigo;
             this.GbtnEnglishWord.HoverState.FillColor2 = System.Drawing.Color.DarkGoldenrod;
             this.GbtnEnglishWord.IndicateFocus = true;
-            this.GbtnEnglishWord.Location = new System.Drawing.Point(55, 29);
+            this.GbtnEnglishWord.Location = new System.Drawing.Point(55, 55);
             this.GbtnEnglishWord.Name = "GbtnEnglishWord";
             this.GbtnEnglishWord.PressedColor = System.Drawing.Color.Purple;
             this.GbtnEnglishWord.PressedDepth = 50;
-            this.GbtnEnglishWord.Size = new System.Drawing.Size(475, 127);
+            this.GbtnEnglishWord.Size = new System.Drawing.Size(475, 118);
             this.GbtnEnglishWord.TabIndex = 36;
             this.GbtnEnglishWord.Text = "Speak Selected Words";
             this.GbtnEnglishWord.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
