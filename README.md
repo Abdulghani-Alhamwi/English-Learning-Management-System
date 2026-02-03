@@ -6,11 +6,11 @@ The latest version integrates **AI-powered automatic example generation**, provi
 
 ---
 
-## 🚀 Project Overview
+## 🚀 Project Overview :
 
 The application starts with a **splash screen** showing progress and initialization, then opens the main interface where users can manage vocabulary and access learning presentation modes.
 
-The project emphasizes:
+The project emphasizes :
 
 * Clean architecture
 * Shared logic
@@ -20,13 +20,13 @@ This reduces code duplication and simplifies long-term maintenance.
 
 ---
 
-## ✨ Features
+## ✨ Features :
 
 ### 🗄️ Storage System
 
 * **File system–based storage** persists English words and their Arabic translations locally.
 
-### 📌 Core Features
+### 📌 Core Features :
 
 1. Splash screen with progress bar and initialization message
 2. Add English words
@@ -41,7 +41,7 @@ This reduces code duplication and simplifies long-term maintenance.
    * Delete multiple selected words
    * Delete all words
 
-### 🤖 AI Integration Feature
+### 🤖 AI Integration Feature :
 
 To use AI, place your API key as a string in `clsWord`; the API is free with daily usage limits.
 When you click the **"Speak Selected Words"** button, the AI integration:
@@ -52,7 +52,7 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 
 ---
 
-## 🎓 Learning / Presentation Mode
+## 🎓 Learning / Presentation Mode :
 
 1. Select **1–4 words**
 2. Generate English example sentences (manually or via AI)
@@ -65,7 +65,7 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 
 ---
 
-## 🖥️ Display Options
+## 🖥️ Display Options :
 
 * Desktop **full-screen mode**
 * **Mobile-size simulation** form
@@ -74,7 +74,7 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 
 ---
 
-## 🧠 Architecture & Code Quality
+## 🧠 Architecture & Code Quality :
 
 * Centralized reusable methods
 * No duplicated business logic
@@ -82,7 +82,7 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Technologies :
 
 * **C#**
 * **WinForms**
@@ -91,7 +91,7 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run :
 
 > ⚠️ Requires **Visual Studio 2026**
 
@@ -100,16 +100,10 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 3. Open the solution in **Visual Studio 2026**
 4. Ensure **.NET Framework 4.8.1** is installed
 5. Set your **Google AI API key** in `clsWord`:
-
-```
-
-> The API key is free from **Google AI Studio** but has daily usage limits.
-
-6. Press **F5** to run
-
+   
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Enhancements :
 
 1. Migrate storage from file system to **relational database**
 2. Add responsive UI support
