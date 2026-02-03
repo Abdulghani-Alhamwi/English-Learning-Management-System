@@ -93,7 +93,7 @@ When you click the **"Speak Selected Words"** button, the AI integration:
 
 ## ▶️ How to Run :
 
-> ⚠️ Requires **Visual Studio 2026**
+⚠️ Requires **Visual Studio 2026**
 
 1. Clone or download the repository
 2. Ensure your **Display Scale** is set to 100 for proper UI display
