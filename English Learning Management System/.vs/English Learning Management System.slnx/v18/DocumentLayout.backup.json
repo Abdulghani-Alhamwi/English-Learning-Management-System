@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system\\english learning management system\\lib\\clsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:lib\\clsword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system\\english learning management system\\screens\\frmlffirstload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmlffirstload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,15 +43,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsWord.cs",
-              "DocumentMoniker": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\Lib\\clsWord.cs",
-              "RelativeDocumentMoniker": "Lib\\clsWord.cs",
-              "ToolTip": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\Lib\\clsWord.cs",
-              "RelativeToolTip": "Lib\\clsWord.cs",
-              "ViewState": "AgIAAKEBAAAAAAAAAAAgwK4BAAAAAAAAAAAAAA==",
+              "Title": "frmLFFirstLoad.cs [Design]",
+              "DocumentMoniker": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmLFFirstLoad.cs",
+              "RelativeDocumentMoniker": "Screens\\frmLFFirstLoad.cs",
+              "ToolTip": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmLFFirstLoad.cs [Design]",
+              "RelativeToolTip": "Screens\\frmLFFirstLoad.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T13:12:15.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-08T19:02:02.963Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -427,7 +427,7 @@ namespace Lib
                 string exampleEn = Regex.Replace(exampleEnRaw, @"[^a-zA-Z0-9\s.]", "").Trim();
 
                 string exampleArRaw = modelText.Substring(arIndex + 13);
-                string exampleAr = Regex.Replace(exampleArRaw, @"[^\u0621-\u063A\u0640-\u064A\u064B-\u0650\s0-9]", "").Trim();
+                string exampleAr = Regex.Replace(exampleArRaw, @"[^\u0621-\u063A\u0640-\u064A\s0-9]", "").Trim();
                 WordExample.ExampleInEnglish = exampleEn;
                 WordExample.ExampleInArabic = exampleAr;
 

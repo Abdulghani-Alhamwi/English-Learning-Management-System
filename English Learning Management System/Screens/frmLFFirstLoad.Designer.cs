@@ -96,8 +96,7 @@
             // 
             // frmLFFirstLoad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::English_Learning_Management_System.Properties.Resources.Whisk_5f815065315d09592be4f3ec4ab8d974eg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1280, 537);

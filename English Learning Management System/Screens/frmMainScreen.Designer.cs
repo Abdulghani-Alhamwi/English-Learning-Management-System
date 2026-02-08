@@ -142,7 +142,7 @@
             this.deleteWordToolStripMenuItem,
             this.deleteAllWordsToolStripMenuItem});
             this.WordsListViewContextMenu.Name = "WordsListViewContextMenu";
-            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 236);
+            this.WordsListViewContextMenu.Size = new System.Drawing.Size(341, 214);
             // 
             // listViewToolStripMenuItem
             // 
@@ -542,8 +542,7 @@
             // 
             // frmMainScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 37F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);

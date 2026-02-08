@@ -51,3 +51,4 @@ D:\My Projects\English-Learning-Management-System\English Learning Management Sy
 D:\My Projects\English-Learning-Management-System\English Learning Management System\obj\x64\Release\English_Learning_Management_System.frmSpeakWordsProperViewForSocialM.resources
 D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Release\Newtonsoft.Json.dll
 D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Release\Newtonsoft.Json.xml
+D:\My Projects\English-Learning-Management-System\English Learning Management System\bin\x64\Release\EnahncedControls.dll

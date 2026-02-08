@@ -289,9 +289,8 @@
             // 
             // frmSpeakWordsProperViewForSocialM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::English_Learning_Management_System.Properties.Resources.Whisk_129c13e609585c5a034470c1ca88eddedr;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(670, 1100);
             this.Controls.Add(this.guna2GradientPanel1);
