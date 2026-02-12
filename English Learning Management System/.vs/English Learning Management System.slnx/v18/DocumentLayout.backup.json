@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\E\\English-Learning-Management-System\\English Learning Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|d:\\my projects\\english-learning-management-system\\english learning management system\\screens\\frmlffirstload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmlffirstload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|c:\\users\\user\\desktop\\e\\english-learning-management-system\\english learning management system\\screens\\frmexamplesinsertion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmexamplesinsertion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|c:\\users\\user\\desktop\\e\\english-learning-management-system\\english learning management system\\screens\\frmexamplesinsertion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8667C375-3F72-4863-B5E8-FBA320B2CAB4}|English Learning Management System.csproj|solutionrelative:screens\\frmexamplesinsertion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,13 +47,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmLFFirstLoad.cs [Design]",
-              "DocumentMoniker": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmLFFirstLoad.cs",
-              "RelativeDocumentMoniker": "Screens\\frmLFFirstLoad.cs",
-              "ToolTip": "D:\\My Projects\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmLFFirstLoad.cs [Design]",
-              "RelativeToolTip": "Screens\\frmLFFirstLoad.cs [Design]",
+              "Title": "frmExamplesInsertion.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\E\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmExamplesInsertion.cs",
+              "RelativeDocumentMoniker": "Screens\\frmExamplesInsertion.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\E\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmExamplesInsertion.cs*",
+              "RelativeToolTip": "Screens\\frmExamplesInsertion.cs*",
+              "ViewState": "AgIAANEAAAAAAAAAAAD4v9gAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:02:02.963Z",
+              "WhenOpened": "2026-02-12T14:29:40.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmExamplesInsertion.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\E\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmExamplesInsertion.cs",
+              "RelativeDocumentMoniker": "Screens\\frmExamplesInsertion.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\E\\English-Learning-Management-System\\English Learning Management System\\Screens\\frmExamplesInsertion.cs [Design]*",
+              "RelativeToolTip": "Screens\\frmExamplesInsertion.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T16:27:39.246Z",
               "EditorCaption": " [Design]"
             }
           ]
