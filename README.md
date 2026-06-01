@@ -11,8 +11,6 @@ The latest version integrates **AI-powered automatic example generation**, provi
 The application starts with a **splash screen** showing progress and initialization, then opens the main interface where users can manage vocabulary and access learning presentation modes.
 
 The project emphasizes:
-
-* Clean architecture.
 * Shared logic.
 * Reusable components.
 
